@@ -7,8 +7,8 @@ import os
 
 # 1. Update the birthdays.csv
 birthdays = pd.read_csv("birthdays.csv")
-MY_EMAIL = os.environ.get("MY_EMAIL")
-MY_PASSWORD = os.environ.get("MY_PASSWORD")
+my_email = os.environ.get("MY_EMAIL")
+password = os.environ.get("MY_PASSWORD")
 
 
 # 2. Check if today matches a birthday in the birthdays.csv
