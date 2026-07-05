@@ -9,6 +9,8 @@ import os
 birthdays = pd.read_csv("birthdays.csv")
 my_email = os.environ.get("MY_EMAIL")
 password = os.environ.get("MY_PASSWORD")
+print(my_email)
+print(password)
 
 
 # 2. Check if today matches a birthday in the birthdays.csv
