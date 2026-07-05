@@ -25,6 +25,7 @@ if day in birthdays["day"].values and month in birthdays["month"].values:
             ltr = f.read()
             ltr = ltr.replace("[NAME]",bt["name"])
         with smtplib.SMTP("smtp.gmail.com", 587) as connection:
+            connection.set_debuglevel(1)
             connection.starttls()
             connection.login(user=my_email, password=password)
             connection.sendmail(from_addr=my_email,
