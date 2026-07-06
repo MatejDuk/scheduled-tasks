@@ -23,6 +23,9 @@ jobs:
 
       - name: Check secrets are configured
         env:
+          OWM_API_KEY: ${{ secrets.OWM_API_KEY }}
+          ACCOUNT_SID: ${{ secrets.ACCOUNT_SID }}
+          AUTH_TOKEN: ${{ secrets.AUTH_TOKEN }}
           MY_EMAIL: ${{ secrets.MY_EMAIL }}
           MY_PASSWORD: ${{ secrets.MY_PASSWORD }}
         run: |
