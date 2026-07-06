@@ -3,8 +3,8 @@ import json
 import os
 from twilio.rest import Client
 
-account_sid = "insert"
-auth_token = "insert"
+account_sid = os.environ.get("ACCOUNT_SID")
+auth_token = os.environ.get("AUTH_TOKEN")
 
 api_key = os.environ.get("OWM_API_KEY")
 
